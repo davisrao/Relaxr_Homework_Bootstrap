@@ -1,7 +1,7 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Davis Rao
 Developer @GA in NYC
 */
 
@@ -31,15 +31,6 @@ Developer @GA in NYC
   clear: both;
 }
 
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
 
 /******************************************
 /* BASE STYLES
@@ -50,7 +41,7 @@ body {
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
-     margin-right:10px;
+    
 }
 .font{
   font-family: 'Open Sans', sans-serif;
@@ -63,10 +54,7 @@ body {
 /*******************************************/
 
 /* Center the container */
-#container {
-  width: 100vw;
-  margin: auto;
-}
+
 
 header {
   background:#033048;
@@ -75,17 +63,22 @@ header {
 }
 nav li{
     float: right;
-    display:none;
- 
+
+}
+.nav-link{
+  padding:15px;
+  margin-right:10px;
+  color:#f9e42e;
+}
+.right-margin{
+  margin-right:60px;
 }
 
 li:hover{
   background:#606161;
 }
-nav li:first-child{
-    display:inline-block; 
- 
-}
+
+
 .line{
     height:5px;
     margin-top:7px;
@@ -95,17 +88,13 @@ nav li:first-child{
     padding-top:2px;
 } 
 .logo{
-  margin-left:10px;
+  
   color:white;
   font-size:3em;
   font-weight:normal;
   float:left; 
 }
-#main-content{
-  margin-left:4px;
-  width:110vw;
-  margin-top:40px;
-}
+
 .section{
   border-bottom:solid 2px lightgray;
 }
@@ -113,18 +102,18 @@ nav li:first-child{
   color:#033048;
   font-weight semibold;
   font-size: 24px;
-  width:90vw;
+
 }
 .image{
   height:30vw;
-  width:90vw;
+  margin-bottom:20px;
   border:solid 2px #033048;
+  padding:0;
 }
 .body{
   color:#606161;
   font-size:16px;
   font-weight:light;
-  width:90vw;
 }
 .large-letter{
    color: #033048;
@@ -143,19 +132,20 @@ nav li:first-child{
   font-weight:bold;
   font-size:16px;
   float:right;
-  padding:5px;
+  padding-top:15px;
 }
 .divide{
-  margin-top:60px;
-  width:95vw;
+  margin-top:30px;
   height:2px;
   background:gray;
+  margin-bottom:20px;
 }
 #sidebar{
-  padding-top:25px;
+  margin-top:30px;
+  padding-left:50px;
+
 }
 .sidebar-head{
-  display:inline-block;
   font-weight:bolder;
   font-size:24px;
   color:#033048;
@@ -163,19 +153,16 @@ nav li:first-child{
 .sidebar-list{
   font-weight:light;
   list-style:none;
-  width:60vw;
   font-size:14px;
 }
-.ad{
+/*.ad{
   width:25%
   height:60%;
-}
+}*/
 #bottom-content{
-  width:100vw;
   margin:0 auto;
 }
 #banner{
-  width:100vw;
   height:70px;
   background:#f9e42e;
   padding-top:15px;
@@ -183,17 +170,17 @@ nav li:first-child{
 .button{
   background:#033048;
   color:white;
-  width:50vw;
+  width:20vw;
   height:40px;
   text-align:center;
   font-size:24px;
   margin:0 auto;
   padding-top:5px;
+  border-radius:5px;
 }
 
 footer {
-  height:50vw;
-  width:100vw;
+  height:200px;
   background:#121212;
 }
 
@@ -214,95 +201,23 @@ margin-top:20px;
 }
 h6 {
   color:white;
-
+}
+.button-font{
+  color:white;
+}
+a{
+  color:#f9e42e;
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media only screen and (min-width: 992px){
-nav li{
-    float: right;
-    display:inline-block;
-    color:#f9e42e;
-    margin-right:5vw;
-}
+@media only screen and (max-width: 768px){
 
-.nav-link{
-  padding:15px px;
-}
+  .button{
+    width:40vw;
+    font-size:18px;
+    color:white;
+  }
 
-#main-content{
-  width:65vw;
-  display:inline-block;
-}
 
-.body{
-  width:65vw;
-}
-.image{
-  width: 65vw;
-  margin:10px 0 ;
-
-}
-#sidebar{
-  display:inline-block;
-  float:right;
-  width:20%;
- padding-left:10px;
- margin-right:10vw;
-
-}
-
-.sidebar-list{
-  width:100%;
-}
-.sidebar-head{
-  padding-top:25px;
-  font-size:22px;
-}
-.ad{
-  width:100%;
-  border:solid 2px #033048 ;
-  margin-top:25px;
-}
-.divide{
-  width:65vw;
-}
-#banner{
-  width:100%;
-  height:70px;
-  padding-top:15px;
-}
-.button{
-  height:40px;
-  width:400px;
-  border-radius:5px;
-  font-weight:normal;
- margin:0 auto;
-  font-size:24px;
-}
-footer{
-  width:100%;
-  height:300px;
-
-}
-.read-more{
-  padding-right:50px;
-  padding-top:30px;
-}
-.social{
-  margin-top:20px;
-}
-#footer{
-  text-align:center;
-}
-
-h6 {
-  color:white;
-   margin-top:20px;
-}
-#bottom-content{
-
-  margin-top:50px;
-}

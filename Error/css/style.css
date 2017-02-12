@@ -63,10 +63,7 @@ body {
 /*******************************************/
 
 /* Center the container */
-#container {
-  width: 100vw;
-  margin: auto;
-}
+
 
 header {
   background:#033048;
@@ -99,7 +96,6 @@ nav li:first-child{
 }
 p{
   font-size:36px;
-  width:90vw;
   margin-left:10px;
 }
 .button{
@@ -110,10 +106,13 @@ p{
   background: #f9e42e;
   border:2px solid #121212;
   text-align:center;
- 
   margin:0 auto;
 }
 
+.center-button{
+  margin-left:auto;
+  margin-right:auto;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
